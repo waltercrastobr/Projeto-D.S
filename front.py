@@ -38,10 +38,10 @@ if "messages" not in st.session_state:
     st.session_state.messages = load_chat_history()
 
 # Adicionar título na página
-st.title("CITiAssistant")  # Título principal da página
+st.title("M.AI.A")  # Título principal da página
 
 # Criar uma barra lateral para o histórico
-st.sidebar.title("CITiAssistant")  # Adiciona o título na barra lateral
+st.sidebar.title("M.AI.A")  # Adiciona o título na barra lateral
 st.sidebar.header("Histórico do Chat Atual")
 
 # Botão para limpar histórico de mensagens
@@ -51,7 +51,7 @@ if st.sidebar.button("Limpar Histórico"):
     save_chat_history(st.session_state.messages)  # Atualiza o histórico salvo
     st.sidebar.success("Histórico limpo com sucesso!")  # Mensagem de sucesso
 
-USER_AVATAR = "🐷"
+USER_AVATAR = "👨🏻‍💻"
 BOT_AVATAR = "🤖"
 
 # Tabela dentro de um botão expansível
@@ -61,7 +61,7 @@ with st.expander("Visualizar Tabela Completa", expanded=False):
 route = 'http://127.0.0.1:5000/ask' 
 
 # Interface de chat
-if prompt := st.chat_input("Mensagem CITiAssistant:"):
+if prompt := st.chat_input("Mensagem M.AI.A:"):
     tokens_usados_pergunta = contar_tokens(prompt)
     
     if tokens_usados_pergunta > MAX_TOKENS_INPUT:
