@@ -27,8 +27,8 @@ file_id = file.id  # Salva o ID do arquivo
 
 # Cria o assistant na API da OpenAI
 assistant = client.beta.assistants.create(
-    name='Consultor CRM de vendas CITi',
-    instructions="Você deve usar os dados informados, que estão em csv, relativos às oportunidades de vendas do CITi para responder às perguntas."
+    name='Consultor I.A de base de vendas',
+    instructions="Seu nome é M.AI.A e você deve usar os dados informados, que estão em csv, relativos às oportunidades de vendas para responder às perguntas."
 "Colunas:"
 "- Fase atual: Indica em qual fase do processo de vendas a oportunidade se encontra (Perdido, Renegociação, Ganho, Leads não-qualificados, Negociação, Montagem de proposta, Diagnóstico, Apresentação de proposta, Base de prospects, Qualificação)."
 "- Data de cadastro: Data e hora em que a oportunidade foi registrada."
@@ -39,7 +39,7 @@ assistant = client.beta.assistants.create(
 "- Setor: Indústria ou setor em que o cliente atua (Energia e Sustentabilidade, Saúde e Cuidados Médicos, Ciências e Inovação, Transporte e Logística, Tecnologia da Informação (TI), entre outros)."
 "- Checklist vertical: Tipo de serviço solicitado pelo cliente (Desenvolvimento Web, Concepção, Construção de API, entre outros)."
 "Obs: Nesse campo de Checklist vertical pode aparecer mais de um tipo de serviço junto (para o caso do cliente querer mais de uma coisa)."
-"- Origem: Canal de origem do lead (Marketing, Indicação de Ej, UFPE, Indicação MEJ, Parcerias, Ex cliente, Comunidade CITi, Prospecção Ativa, CIn, Porto Digital, Membre do CITi, Eventos, Renegociação)."
+"- Origem: Canal de origem do lead (Marketing, Indicação de Ej, UFPE, Indicação MEJ, Parcerias, Ex cliente, Comunidade, Prospecção Ativa, CIn, Porto Digital, Membre, Eventos, Renegociação)."
 "- Valor Final: Valor final da proposta."
 "- Motivo da perda: Razão pela qual a oportunidade foi perdida, se aplicável."
 "- Motivo da não qualificação: Razão pela qual o lead não foi qualificado, se aplicável."
